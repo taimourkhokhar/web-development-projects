@@ -30,12 +30,18 @@ justify-content: center;
   gap: 5px;
 }
 
-.second-part{
+.second-part {
   display: flex;
+  flex-direction: column; 
+  gap: 10px;    
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;  
   align-items: center;
-  justify-content: space-between;
-  background-color: rgb(223, 222, 222);
-  width: 100%;
+  /* padding:4px; */
+  background: #f2f2f2;
   border-radius: 5px;
 }
 
@@ -60,9 +66,17 @@ button{
   color: white;
   border-radius: 3px;
   font-size: 15px;
+  cursor: pointer;
 }
 
-
+/* .new-div{
+   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(243, 242, 242);
+  width: 100%;
+  border-radius: 5px;
+} */
 
 
 img{
@@ -70,6 +84,7 @@ img{
   background-color: #a132d1;
   padding: 6px;
   border-radius: 4px;
+  cursor: pointer;
 }
 input{
   width: 100%;
@@ -77,4 +92,5 @@ input{
 }
 ::placeholder{
 padding-left: 15px;
+font-size: 15px;
 }
