@@ -1,30 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Todo App</title>
- <link rel="stylesheet" href="style.css">
-</head>
-<body>
-   <div class="container">
-    <h1>Todo App</h1>
-    <div class="first-part">
-      <input type="text" name="" id="input-box" placeholder="Add your new todo">
-      <img id="plus" src="./icons8-plus.svg" alt="">
-    </div>
-    <div class="second-part">
-      <div class="item">
-      <span id="add-text"></span>
-      <img id="delete-icon" src="./icons8-delete.svg" style="display: none;" alt="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Todo App</h1>
+      <div class="first-part">
+        <input
+          type="text"
+          name=""
+          id="input-box"
+          placeholder="Add your new todo"
+        />
+        <img id="plus" src="./icons8-plus.svg" alt="" />
       </div>
-      
+      <div class="second-part">
+        <div class="item">
+          <span id="add-text"></span>
+          <img
+            id="delete-icon"
+            src="./icons8-delete.svg"
+            style="display: none"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="third-part">
+        <span>You have total <span id="total"></span> task</span>
+        <button id="btn">Clear All</button>
+      </div>
     </div>
-    <div class="third-part">
-      <span>You have total <span id="total"></span>  task</span>
-      <button id="btn">Clear All</button>
-    </div>
-   </div>
-  <script src="app.js"></script>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
