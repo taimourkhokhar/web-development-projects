@@ -9,13 +9,12 @@ const MovieCard = (props) => {
       <div className="data-part">
         <h2>{props.name}</h2>
 
-        {/* ❤️ Favorite Icon */}
         <img
           id='fav-img'
           src={props.imag}
           alt=""
           onClick={(e) => {
-            e.stopPropagation(); // prevent card click
+            e.stopPropagation();
             props.toggleFavourite(props.movie);
           }}
           style={{

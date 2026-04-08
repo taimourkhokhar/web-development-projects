@@ -6,7 +6,6 @@ const Favourites = ({ fave, showOnlyFav, setShowOnlyFav }) => {
     <div className='card-item'>
       <h1 id='favhead'>Favourites</h1>
 
-      {/* Checkbox */}
       <label>
         <input
           type="checkbox"
