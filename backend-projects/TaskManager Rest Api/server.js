@@ -2,13 +2,19 @@ const express=require('express')
 const{default:mongoose}=require('mongoose')
 const app=express()
 const path = require('path');
+const taskRoutes = require('./routes/taskRoutes');
 // Point to the config folder
 require('dotenv').config({ path: path.resolve(__dirname, './config/.env') });
 db_link=process.env.db_link
 console.log(db_link)
-app.use('/',(req,res)=>{
-  res.send("Hello server is running")
-})
+app.use(express.json())
+app.use('/tasks', taskRoutes);
+
+
+// app.use(express.json());
+// app.use('/',(req,res)=>{
+//   res.send("Hello server is running")
+// })
 // URL: http://localhost:3000/users/123
 // app.get('/users/:userId', (req, res) => {
 //   const id = req.params.userId; // Returns "123"
