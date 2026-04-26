@@ -1,15 +1,15 @@
 const express=require('express')
 
 const router=express.Router()
-const {createTask}=require('../controllers/taskController.js')
-// router.get('/',getTask)
+const {createTask,getTask,getOneTask,deleteTask,updateTask}=require('../controllers/taskController.js')
+router.get('/',getTask)
 
-// router.get('/:id',getOneTask)
+router.get('/:id',getOneTask)
 router.post('/',createTask)
 
-// router.delete('/:id',deleteTask)
+router.delete('/:id',deleteTask)
 
-// router.patch('/:id',updateTask)
+router.patch('/:id',updateTask)
 
 
 module.exports=router
